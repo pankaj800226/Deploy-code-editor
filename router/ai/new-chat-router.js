@@ -3,7 +3,7 @@ import { isAuthentication } from '../../authorize/authorizeUser.js'
 import { createNewChat, deleteChat, findNewChat } from '../../controllers/ai/new-chat.controllers.js'
 const router = express.Router()
 
-router.post('/create/folde', isAuthentication, createNewChat)
+router.post('/create/folder', isAuthentication, createNewChat)
 router.get('/getNewChat', isAuthentication, findNewChat)
 router.delete('/delete/chat/:id',deleteChat)
 
